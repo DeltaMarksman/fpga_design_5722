@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Sep  3 13:46:39 2026
+# Process ID: 10624
+# Current directory: C:/Users/da949990/fpga_design_5722/lab_1/lab_1.runs/impl_1
+# Command line: vivado.exe -log lab_1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab_1.tcl -notrace
+# Log file: C:/Users/da949990/fpga_design_5722/lab_1/lab_1.runs/impl_1/lab_1.vdi
+# Journal file: C:/Users/da949990/fpga_design_5722/lab_1/lab_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab_1.tcl -notrace

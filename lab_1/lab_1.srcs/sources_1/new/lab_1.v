@@ -33,6 +33,7 @@ module lab_1(
     reg [3:0]   tens = 0;
     reg [3:0]   current_digit = 0;
     reg [16:0]  counter = 0;
+    reg [17:0]  debounce_counter = 131071;
     
     // Genereate btnU pulse logic
     reg btnU_ff_1;
@@ -83,7 +84,7 @@ module lab_1(
         end
         
         // Buttons
-        if (btnD_pulse) begin
+        if (btnD_pulse & (debounce_counter == 131071)) begin
             if (ones == 9) begin
                 ones <= 0;
                 if (tens == 9) begin
@@ -94,14 +95,23 @@ module lab_1(
             end else begin
                 ones <= ones + 1;
             end
+            
+            debounce_counter <= 0;
         end
         
-        if (btnU_pulse) begin
+        if (btnU_pulse & (debounce_counter == 131071)) begin
             if (tens == 9) begin
                 tens <= 0;
             end else begin
                 tens <= tens + 1;
-            end 
+            end
+            
+            debounce_counter <= 0;
+        end
+        
+        // Debounce
+        if (debounce_counter < 131071) begin
+            debounce_counter <= debounce_counter + 1;
         end
         
         // Driving
