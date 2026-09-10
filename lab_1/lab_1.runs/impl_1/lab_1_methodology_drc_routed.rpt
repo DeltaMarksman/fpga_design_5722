@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Sep  3 13:45:31 2026
-| Host         : CECS9NK92Z3 running 64-bit major release  (build 9200)
+| Date         : Thu Sep 10 12:16:41 2026
+| Host         : CECSJPRHRY3 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file lab_1_methodology_drc_routed.rpt -pb lab_1_methodology_drc_routed.pb -rpx lab_1_methodology_drc_routed.rpx
 | Design       : lab_1
 | Device       : xc7a35tcpg236-1
