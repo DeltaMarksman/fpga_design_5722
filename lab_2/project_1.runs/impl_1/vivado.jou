@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Sep 17 13:19:27 2026
+# Process ID: 30440
+# Current directory: C:/Users/da133662/fpga_design_5722/lab_2/project_1.runs/impl_1
+# Command line: vivado.exe -log vga_color_changer.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vga_color_changer.tcl -notrace
+# Log file: C:/Users/da133662/fpga_design_5722/lab_2/project_1.runs/impl_1/vga_color_changer.vdi
+# Journal file: C:/Users/da133662/fpga_design_5722/lab_2/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source vga_color_changer.tcl -notrace
