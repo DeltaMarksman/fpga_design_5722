@@ -68,17 +68,6 @@ module top(
             8'h3D: digit_val = 4'd7;
             8'h3E: digit_val = 4'd8;
             8'h46: digit_val = 4'd9;
-            // Keypad (Num Lock on)
-            8'h70: digit_val = 4'd0;
-            8'h69: digit_val = 4'd1;
-            8'h72: digit_val = 4'd2;
-            8'h7A: digit_val = 4'd3;
-            8'h6B: digit_val = 4'd4;
-            8'h73: digit_val = 4'd5;
-            8'h74: digit_val = 4'd6;
-            8'h6C: digit_val = 4'd7;
-            8'h75: digit_val = 4'd8;
-            8'h7D: digit_val = 4'd9;
             default: is_digit = 1'b0;
         endcase
     end
