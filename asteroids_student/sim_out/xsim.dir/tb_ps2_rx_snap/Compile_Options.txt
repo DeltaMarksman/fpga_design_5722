@@ -1,0 +1,1 @@
+-nolog -debug "off" -s "tb_ps2_rx_snap" "work.tb_ps2_rx" 

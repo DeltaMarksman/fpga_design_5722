@@ -1,0 +1,1 @@
+-nolog -debug "off" -s "tb_vga_timing_snap" "work.tb_vga_timing" 

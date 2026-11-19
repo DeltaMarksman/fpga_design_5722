@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_binary2bcd_snap/xsimk.exe -runall -simmode gui -wdb tb_binary2bcd_snap.wdb -simrunnum 0 -socket 54166
+Design successfully loaded
+Design Loading Memory Usage: 8076 KB (Peak: 8076 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8580 KB (Peak: 8580 KB)
+Simulation CPU Usage: 15 ms

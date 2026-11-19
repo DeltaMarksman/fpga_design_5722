@@ -1,0 +1,1 @@
+-nolog -debug "off" -s "tb_ge_collide_snap" "work.tb_ge_collide" 

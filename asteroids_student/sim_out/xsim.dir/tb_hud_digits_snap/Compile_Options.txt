@@ -1,0 +1,1 @@
+-nolog -debug "off" -s "tb_hud_digits_snap" "work.tb_hud_digits" 

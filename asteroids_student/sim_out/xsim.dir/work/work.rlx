@@ -1,0 +1,21 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/binary2bcd.v,1795072017,verilog,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_hud_digits.v,,binary2bcd,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/buttons.v,1795072004,verilog,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_button_debounce.v,,button_debounce;game_select,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_defs.vh,1795068684,verilog,,,,,,,,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v,1795072004,verilog,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_ge_split.v,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_defs.vh,ge_boundary;ge_collide;ge_response;ge_spawn;ge_split,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/kbd_state.v,1795071277,verilog,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_kbd_state.v,,kbd_state,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ps2_rx.v,1795071277,verilog,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_ps2_rx.v,,ps2_rx,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v,1795072004,verilog,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/binary2bcd.v,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_defs.vh,hud_digits;hud_pips;vga_render,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_timing.v,1795071277,verilog,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_vga_timing.v,,vga_timing,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_binary2bcd.v,1795072764,verilog,,,,tb_binary2bcd,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_button_debounce.v,1795072764,verilog,,,,tb_button_debounce,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_ge_boundary.v,1795072764,verilog,,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_defs.vh,tb_ge_boundary,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_ge_collide.v,1795072764,verilog,,,,tb_ge_collide,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_ge_split.v,1795072764,verilog,,,,tb_ge_split,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_hud_digits.v,1795072764,verilog,,,,tb_hud_digits,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_kbd_state.v,1795072764,verilog,,,,tb_kbd_state,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_ps2_rx.v,1795072764,verilog,,,,tb_ps2_rx,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_vga_timing.v,1795072764,verilog,,,,tb_vga_timing,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,

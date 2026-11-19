@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Nov 19 02:19:56 2026
+# Process ID: 54996
+# Current directory: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/sim_out
+# Command line: xsim.exe -nolog -mode tcl -source {xsim.dir/tb_ge_boundary_snap/xsim_script.tcl}
+# Log file: 
+# Journal file: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/sim_out\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/tb_ge_boundary_snap/xsim_script.tcl
+run -all

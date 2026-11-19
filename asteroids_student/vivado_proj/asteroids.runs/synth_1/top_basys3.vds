@@ -1,0 +1,1111 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Nov 19 02:36:59 2026
+# Process ID: 50836
+# Current directory: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1
+# Command line: vivado.exe -log top_basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_basys3.tcl
+# Log file: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1/top_basys3.vds
+# Journal file: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_basys3.tcl -notrace
+Command: synth_design -top top_basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 59056 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 409.078 ; gain = 103.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_basys3' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/top_basys3.v:29]
+	Parameter MEM_FILE bound to: games.mem - type: string 
+	Parameter DEBOUNCE_BITS bound to: 20 - type: integer 
+	Parameter PS2_FILTER_BITS bound to: 7 - type: integer 
+	Parameter PS2_TIMEOUT_BITS bound to: 18 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'button_debounce' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/buttons.v:15]
+	Parameter CNT_BITS bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'button_debounce' (1#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/buttons.v:15]
+INFO: [Synth 8-638] synthesizing module 'game_select' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/buttons.v:67]
+INFO: [Synth 8-256] done synthesizing module 'game_select' (2#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/buttons.v:67]
+INFO: [Synth 8-638] synthesizing module 'ps2_rx' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ps2_rx.v:21]
+	Parameter FILTER_BITS bound to: 7 - type: integer 
+	Parameter TIMEOUT_BITS bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ps2_rx' (3#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ps2_rx.v:21]
+INFO: [Synth 8-638] synthesizing module 'kbd_state' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/kbd_state.v:32]
+INFO: [Synth 8-256] done synthesizing module 'kbd_state' (4#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/kbd_state.v:32]
+INFO: [Synth 8-638] synthesizing module 'game_core' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_core.v:6]
+	Parameter MEM_FILE bound to: games.mem - type: string 
+INFO: [Synth 8-638] synthesizing module 'vga_timing' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_timing.v:25]
+	Parameter H_ACTIVE bound to: 640 - type: integer 
+	Parameter H_FP bound to: 16 - type: integer 
+	Parameter H_SYNC bound to: 96 - type: integer 
+	Parameter H_BP bound to: 48 - type: integer 
+	Parameter V_ACTIVE bound to: 480 - type: integer 
+	Parameter V_FP bound to: 10 - type: integer 
+	Parameter V_SYNC bound to: 2 - type: integer 
+	Parameter V_BP bound to: 33 - type: integer 
+	Parameter H_TOTAL bound to: 800 - type: integer 
+	Parameter V_TOTAL bound to: 525 - type: integer 
+	Parameter HS_START bound to: 656 - type: integer 
+	Parameter HS_END bound to: 752 - type: integer 
+	Parameter VS_START bound to: 490 - type: integer 
+	Parameter VS_END bound to: 492 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_timing' (5#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_timing.v:25]
+INFO: [Synth 8-638] synthesizing module 'game_logic' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_logic.v:17]
+	Parameter MEM_FILE bound to: games.mem - type: string 
+INFO: [Synth 8-638] synthesizing module 'game_rom' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_rom.v:11]
+	Parameter AW bound to: 11 - type: integer 
+	Parameter MEM_FILE bound to: games.mem - type: string 
+INFO: [Synth 8-638] synthesizing module 'game_rom_bmg' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1/.Xil/Vivado-50836-DESKTOP-8H87QI6/realtime/game_rom_bmg_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'game_rom_bmg' (6#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1/.Xil/Vivado-50836-DESKTOP-8H87QI6/realtime/game_rom_bmg_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'game_rom' (7#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_rom.v:11]
+INFO: [Synth 8-638] synthesizing module 'obj_ram' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/obj_ram.v:10]
+	Parameter AW bound to: 6 - type: integer 
+	Parameter DW bound to: 96 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'obj_ram_bmg' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1/.Xil/Vivado-50836-DESKTOP-8H87QI6/realtime/obj_ram_bmg_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'obj_ram_bmg' (8#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1/.Xil/Vivado-50836-DESKTOP-8H87QI6/realtime/obj_ram_bmg_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'obj_ram' (9#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/obj_ram.v:10]
+INFO: [Synth 8-638] synthesizing module 'game_loader' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_loader.v:18]
+	Parameter L_IDLE bound to: 4'b0000 
+	Parameter L_DIR bound to: 4'b0001 
+	Parameter L_DIRW bound to: 4'b0010 
+	Parameter L_HDR bound to: 4'b0011 
+	Parameter L_HDRW bound to: 4'b0100 
+	Parameter L_PAL bound to: 4'b0101 
+	Parameter L_PALW bound to: 4'b0110 
+	Parameter L_OBJ bound to: 4'b0111 
+	Parameter L_OBJW bound to: 4'b1000 
+	Parameter L_OBJWR bound to: 4'b1001 
+	Parameter L_FIN bound to: 4'b1010 
+INFO: [Synth 8-256] done synthesizing module 'game_loader' (10#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_loader.v:18]
+INFO: [Synth 8-638] synthesizing module 'game_engine' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_engine.v:30]
+	Parameter S_IDLE bound to: 6'b000000 
+	Parameter S_P1_ADDR bound to: 6'b000001 
+	Parameter S_P1_LOAD bound to: 6'b000010 
+	Parameter S_P1_EXEC bound to: 6'b000011 
+	Parameter S_P1_WR bound to: 6'b000100 
+	Parameter S_IN_ADDR bound to: 6'b000101 
+	Parameter S_IN_LOAD bound to: 6'b000110 
+	Parameter S_IN_CHK bound to: 6'b000111 
+	Parameter S_IT_ADDR bound to: 6'b001000 
+	Parameter S_IT_LOAD bound to: 6'b001001 
+	Parameter S_IT_EXEC bound to: 6'b001010 
+	Parameter S_IT_WR bound to: 6'b001011 
+	Parameter S_SP_ADDR bound to: 6'b001100 
+	Parameter S_SP_LOAD bound to: 6'b001101 
+	Parameter S_SP_CHK bound to: 6'b001110 
+	Parameter S_SP_PLACE bound to: 6'b001111 
+	Parameter S_SP_WRB bound to: 6'b010000 
+	Parameter S_MV_ADDR bound to: 6'b010001 
+	Parameter S_MV_LOAD bound to: 6'b010010 
+	Parameter S_MV_CHK bound to: 6'b010011 
+	Parameter S_MV_ADD bound to: 6'b010100 
+	Parameter S_MV_EDGE bound to: 6'b010101 
+	Parameter S_MV_POST bound to: 6'b010110 
+	Parameter S_CO_ADDR bound to: 6'b010111 
+	Parameter S_CO_LOAD bound to: 6'b011000 
+	Parameter S_CO_PEN bound to: 6'b011001 
+	Parameter S_CO_CHK bound to: 6'b011010 
+	Parameter S_CO_POST bound to: 6'b011011 
+	Parameter S_A_WR bound to: 6'b011100 
+	Parameter S_RS_ADDR bound to: 6'b011101 
+	Parameter S_RS_W0 bound to: 6'b011110 
+	Parameter S_RS_W1 bound to: 6'b011111 
+	Parameter S_RS_CHK bound to: 6'b100000 
+	Parameter S_RS_ACT1 bound to: 6'b100001 
+	Parameter S_RS_ACT2 bound to: 6'b100010 
+	Parameter S_RS_SELF bound to: 6'b100011 
+	Parameter S_RS_OTHER bound to: 6'b100100 
+	Parameter S_RS_NEXT bound to: 6'b100101 
+	Parameter S_RL_0 bound to: 6'b100110 
+	Parameter S_RL_1 bound to: 6'b100111 
+	Parameter S_RL_2 bound to: 6'b101000 
+	Parameter S_RL_3 bound to: 6'b101001 
+	Parameter S_END bound to: 6'b101010 
+	Parameter S_IT_FACE bound to: 6'b101011 
+	Parameter S_SPL_WB bound to: 6'b101100 
+	Parameter S_SPL_ADDR bound to: 6'b101101 
+	Parameter S_SPL_LOAD bound to: 6'b101110 
+	Parameter S_SPL_CHK bound to: 6'b101111 
+	Parameter S_SPL_PLACE bound to: 6'b110000 
+	Parameter S_SPL_WR bound to: 6'b110001 
+	Parameter S_SPL_NEXT bound to: 6'b110010 
+	Parameter S_WV_ADDR bound to: 6'b110011 
+	Parameter S_WV_LOAD bound to: 6'b110100 
+	Parameter S_WV_CHK bound to: 6'b110101 
+	Parameter S_WR_ADDR bound to: 6'b110110 
+	Parameter S_WR_LOAD bound to: 6'b110111 
+	Parameter S_WR_CHK bound to: 6'b111000 
+	Parameter S_WR_WR bound to: 6'b111001 
+INFO: [Synth 8-638] synthesizing module 'ge_boundary' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:175]
+INFO: [Synth 8-256] done synthesizing module 'ge_boundary' (11#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:175]
+INFO: [Synth 8-638] synthesizing module 'ge_collide' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:40]
+INFO: [Synth 8-256] done synthesizing module 'ge_collide' (12#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:40]
+INFO: [Synth 8-638] synthesizing module 'ge_response' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:95]
+INFO: [Synth 8-256] done synthesizing module 'ge_response' (13#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:95]
+INFO: [Synth 8-638] synthesizing module 'ge_spawn' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:282]
+INFO: [Synth 8-256] done synthesizing module 'ge_spawn' (14#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:282]
+INFO: [Synth 8-638] synthesizing module 'ge_split' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:330]
+INFO: [Synth 8-256] done synthesizing module 'ge_split' (15#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:330]
+INFO: [Synth 8-256] done synthesizing module 'game_engine' (16#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_engine.v:30]
+INFO: [Synth 8-4471] merging register 'load_ack_reg' into 'ld_start_reg' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_logic.v:140]
+WARNING: [Synth 8-6014] Unused sequential element load_ack_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_logic.v:140]
+INFO: [Synth 8-256] done synthesizing module 'game_logic' (17#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_logic.v:17]
+INFO: [Synth 8-638] synthesizing module 'vga_render' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:18]
+	Parameter N_SLOTS bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'binary2bcd' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/binary2bcd.v:18]
+	Parameter S_IDLE bound to: 2'b00 
+	Parameter S_ADD bound to: 2'b01 
+	Parameter S_SHIFT bound to: 2'b10 
+	Parameter S_DONE bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'binary2bcd' (18#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/binary2bcd.v:18]
+INFO: [Synth 8-638] synthesizing module 'hud_digits' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:289]
+INFO: [Synth 8-256] done synthesizing module 'hud_digits' (19#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:289]
+INFO: [Synth 8-638] synthesizing module 'hud_pips' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:359]
+INFO: [Synth 8-256] done synthesizing module 'hud_pips' (20#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:359]
+INFO: [Synth 8-256] done synthesizing module 'vga_render' (21#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:18]
+INFO: [Synth 8-256] done synthesizing module 'game_core' (22#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_core.v:6]
+INFO: [Synth 8-638] synthesizing module 'sevenseg' [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/sevenseg.v:5]
+	Parameter REFRESH_BITS bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sevenseg' (23#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/sevenseg.v:5]
+INFO: [Synth 8-256] done synthesizing module 'top_basys3' (24#1) [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/top_basys3.v:29]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 507.453 ; gain = 202.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 507.453 ; gain = 202.301
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1/.Xil/Vivado-50836-DESKTOP-8H87QI6/dcp2/game_rom_bmg_in_context.xdc] for cell 'u_core/u_logic/u_rom/u_bmg'
+Finished Parsing XDC File [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1/.Xil/Vivado-50836-DESKTOP-8H87QI6/dcp2/game_rom_bmg_in_context.xdc] for cell 'u_core/u_logic/u_rom/u_bmg'
+Parsing XDC File [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1/.Xil/Vivado-50836-DESKTOP-8H87QI6/dcp3/obj_ram_bmg_in_context.xdc] for cell 'u_core/u_logic/u_obj_ram/u_bmg'
+Finished Parsing XDC File [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1/.Xil/Vivado-50836-DESKTOP-8H87QI6/dcp3/obj_ram_bmg_in_context.xdc] for cell 'u_core/u_logic/u_obj_ram/u_bmg'
+Parsing XDC File [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/basys3.xdc]
+Finished Parsing XDC File [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 851.230 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_core/u_logic/u_obj_ram/u_bmg' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_core/u_logic/u_rom/u_bmg' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 852.773 ; gain = 547.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 852.773 ; gain = 547.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_core/u_logic/u_obj_ram/u_bmg. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_core/u_logic/u_rom/u_bmg. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 852.773 ; gain = 547.621
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/buttons.v:42]
+INFO: [Synth 8-5544] ROM "valid" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_err" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element c_cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ps2_rx.v:46]
+WARNING: [Synth 8-6014] Unused sequential element d_cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ps2_rx.v:46]
+WARNING: [Synth 8-6014] Unused sequential element idle_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ps2_rx.v:96]
+INFO: [Synth 8-5546] ROM "hit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "idx" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ext" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "brk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "brk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vcount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_loader.v:96]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'game_loader'
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ram_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pal_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:146]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:153]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:128]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:128]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:312]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:313]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_units.v:313]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_engine.v:416]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/game_engine.v:356]
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rl_ret" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rl_ret" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "a_heading5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rl_ret" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "a_rec" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "a_rec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "a_rec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "b_rec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "m_rec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "evt_edges" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "b_dirty" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "spl_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_x" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "st" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:116]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:116]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:116]
+INFO: [Synth 8-5546] ROM "slot_xs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slot_xs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "scanning" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "idx20" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element sc_i_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:74]
+WARNING: [Synth 8-6014] Unused sequential element sc_cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:136]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/sevenseg.v:39]
+WARNING: [Synth 8-6014] Unused sequential element por_cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/top_basys3.v:58]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  L_IDLE |                             0000 |                             0000
+                   L_DIR |                             0001 |                             0001
+                  L_DIRW |                             0010 |                             0010
+                   L_HDR |                             0011 |                             0011
+                  L_HDRW |                             0100 |                             0100
+                   L_PAL |                             0101 |                             0101
+                  L_PALW |                             0110 |                             0110
+                   L_OBJ |                             0111 |                             0111
+                   L_FIN |                             1000 |                             1010
+                  L_OBJW |                             1001 |                             1000
+                 L_OBJWR |                             1010 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'game_loader'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 852.773 ; gain = 547.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 12    
+	   4 Input     13 Bit       Adders := 4     
+	   3 Input     13 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 10    
+	   3 Input     11 Bit       Adders := 9     
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 8     
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 7     
+	   2 Input      6 Bit       Adders := 16    
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 12    
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	                9 Bit    Wide XORs := 1     
++---Registers : 
+	               96 Bit    Registers := 4     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 7     
+	               13 Bit    Registers := 4     
+	               11 Bit    Registers := 13    
+	               10 Bit    Registers := 80    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 16    
+	                6 Bit    Registers := 11    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 61    
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 17    
+	                1 Bit    Registers := 63    
++---RAMs : 
+	              192 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 10    
+	  11 Input     96 Bit        Muxes := 2     
+	  59 Input     96 Bit        Muxes := 4     
+	   5 Input     96 Bit        Muxes := 1     
+	   4 Input     96 Bit        Muxes := 2     
+	  14 Input     96 Bit        Muxes := 1     
+	   5 Input     76 Bit        Muxes := 1     
+	   7 Input     76 Bit        Muxes := 1     
+	   6 Input     54 Bit        Muxes := 1     
+	   2 Input     54 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 8     
+	   2 Input     12 Bit        Muxes := 1     
+	   7 Input     11 Bit        Muxes := 2     
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 17    
+	   3 Input     11 Bit        Muxes := 2     
+	  59 Input     11 Bit        Muxes := 2     
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 84    
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 10    
+	  11 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 6     
+	  44 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 46    
+	   3 Input      6 Bit        Muxes := 5     
+	  59 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 10    
+	  10 Input      5 Bit        Muxes := 1     
+	  11 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 89    
+	  11 Input      4 Bit        Muxes := 1     
+	  27 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 9     
+	  38 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 9     
+	  59 Input      3 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
+	  59 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 159   
+	   4 Input      1 Bit        Muxes := 25    
+	   3 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 23    
+	  10 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 3     
+	  59 Input      1 Bit        Muxes := 24    
+	   5 Input      1 Bit        Muxes := 5     
+	  14 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_basys3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module button_debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module game_select 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+Module ps2_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	                9 Bit    Wide XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module kbd_state 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 6     
+	   3 Input     10 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+Module vga_timing 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module game_loader 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               96 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               11 Bit    Registers := 10    
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 4     
+	  11 Input     96 Bit        Muxes := 2     
+	   7 Input     11 Bit        Muxes := 2     
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  11 Input      5 Bit        Muxes := 1     
+	  27 Input      4 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 22    
+Module ge_boundary 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 8     
+	   3 Input     11 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 10    
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module ge_collide 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     13 Bit       Adders := 4     
++---Registers : 
+	               13 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module ge_response 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 5     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 2     
+Module ge_spawn 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 4     
+Module ge_split 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 4     
+Module game_engine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 5     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               96 Bit    Registers := 2     
+	               32 Bit    Registers := 3     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 5     
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 7     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 5     
+	  59 Input     96 Bit        Muxes := 4     
+	   5 Input     96 Bit        Muxes := 1     
+	   4 Input     96 Bit        Muxes := 2     
+	  14 Input     96 Bit        Muxes := 1     
+	   5 Input     76 Bit        Muxes := 1     
+	   7 Input     76 Bit        Muxes := 1     
+	   6 Input     54 Bit        Muxes := 1     
+	   2 Input     54 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	  59 Input     11 Bit        Muxes := 2     
+	   5 Input     11 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 11    
+	   3 Input      6 Bit        Muxes := 3     
+	  59 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 13    
+	   2 Input      3 Bit        Muxes := 3     
+	  59 Input      3 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  59 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 1     
+	  59 Input      1 Bit        Muxes := 24    
+	   5 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+Module game_logic 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module binary2bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+Module hud_digits 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 5     
+	   2 Input     10 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	  44 Input      7 Bit        Muxes := 1     
+Module hud_pips 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 3     
++---Muxes : 
+	   9 Input      1 Bit        Muxes := 2     
+Module vga_render 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 10    
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               96 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 69    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 36    
+	                1 Bit    Registers := 19    
++---RAMs : 
+	              192 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 6     
+	   2 Input     10 Bit        Muxes := 74    
+	   2 Input      4 Bit        Muxes := 71    
+	   3 Input      4 Bit        Muxes := 1     
+	  38 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 107   
+Module sevenseg 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/buttons.v:42]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/buttons.v:42]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/buttons.v:42]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/buttons.v:42]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/buttons.v:42]
+WARNING: [Synth 8-6014] Unused sequential element c_cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ps2_rx.v:46]
+WARNING: [Synth 8-6014] Unused sequential element idle_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ps2_rx.v:96]
+WARNING: [Synth 8-6014] Unused sequential element d_cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ps2_rx.v:46]
+INFO: [Synth 8-5546] ROM "ext" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "brk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "brk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "idx" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element sc_i_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:74]
+WARNING: [Synth 8-6014] Unused sequential element sc_cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v:136]
+INFO: [Synth 8-5546] ROM "u_timing/vcount" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element u_bcd1/done_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/binary2bcd.v:55]
+WARNING: [Synth 8-6014] Unused sequential element u_bcd2/done_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/binary2bcd.v:55]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/sevenseg.v:39]
+WARNING: [Synth 8-6014] Unused sequential element por_cnt_reg was removed.  [C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/top_basys3.v:58]
+INFO: [Synth 8-3886] merging instance 'u_core/u_logic/u_engine/rs_ret_reg[4]' (FDRE) to 'u_core/u_logic/u_engine/rs_ret_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_core/u_logic/u_engine/rs_ret_reg[0]' (FDRE) to 'u_core/u_logic/u_engine/rs_ret_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_core/u_logic/u_engine /\rs_ret_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (m_rec_reg[15]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (m_rec_reg[14]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (m_rec_reg[13]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r1_reg[31]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r1_reg[30]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r1_reg[29]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r1_reg[28]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r1_reg[11]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r1_reg[7]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r1_reg[6]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[19]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[18]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[15]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[14]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[13]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[12]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[11]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[10]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[9]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[8]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[7]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[6]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[5]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[4]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[3]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[2]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (r0_reg[1]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (rs_ret_reg[5]) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (done_reg) is unused and will be removed from module game_engine.
+WARNING: [Synth 8-3332] Sequential element (done_reg) is unused and will be removed from module binary2bcd.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[95]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[94]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[93]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[92]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[91]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[90]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[89]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[88]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[87]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[86]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[85]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[83]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[82]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[81]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[80]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[79]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[77]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[76]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[75]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[74]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[73]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[72]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[66]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[65]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[63]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[62]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[61]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[60]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[59]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[58]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[53]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[52]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[51]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[50]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[49]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[48]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[47]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[46]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[45]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[44]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[43]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (ob_r_reg[42]) is unused and will be removed from module vga_render.
+WARNING: [Synth 8-3332] Sequential element (sw_m_reg[9]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_m_reg[8]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_m_reg[7]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_m_reg[6]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_m_reg[5]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_m_reg[4]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_m_reg[3]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_m_reg[2]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_s_reg[9]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_s_reg[8]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_s_reg[7]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_s_reg[6]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_s_reg[5]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_s_reg[4]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_s_reg[3]) is unused and will be removed from module top_basys3.
+WARNING: [Synth 8-3332] Sequential element (sw_s_reg[2]) is unused and will be removed from module top_basys3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 852.773 ; gain = 547.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------+------------+-----------+----------------------+--------------+
+|Module Name       | RTL Object | Inference | Size (Depth x Width) | Primitives   | 
++------------------+------------+-----------+----------------------+--------------+
+|\u_core/u_render  | pal_reg    | Implied   | 16 x 12              | RAM32M x 2   | 
++------------------+------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 882.043 ; gain = 576.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 916.293 ; gain = 611.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------------+------------+-----------+----------------------+--------------+
+|Module Name       | RTL Object | Inference | Size (Depth x Width) | Primitives   | 
++------------------+------------+-----------+----------------------+--------------+
+|\u_core/u_render  | pal_reg    | Implied   | 16 x 12              | RAM32M x 2   | 
++------------------+------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'u_core/u_logic/u_engine/rs_ret_reg[3]' (FDRE) to 'u_core/u_logic/u_engine/evt_col_reg'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 975.289 ; gain = 670.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 975.289 ; gain = 670.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 975.289 ; gain = 670.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 975.289 ; gain = 670.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 975.289 ; gain = 670.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 975.289 ; gain = 670.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 975.289 ; gain = 670.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |obj_ram_bmg   |         1|
+|2     |game_rom_bmg  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |game_rom_bmg |     1|
+|2     |obj_ram_bmg  |     1|
+|3     |BUFG         |     1|
+|4     |CARRY4       |   367|
+|5     |LUT1         |    63|
+|6     |LUT2         |   599|
+|7     |LUT3         |   266|
+|8     |LUT4         |  1450|
+|9     |LUT5         |   657|
+|10    |LUT6         |  1053|
+|11    |MUXF7        |    35|
+|12    |MUXF8        |     2|
+|13    |RAM32M       |     2|
+|14    |FDRE         |  2225|
+|15    |FDSE         |    22|
+|16    |IBUF         |    16|
+|17    |OBUF         |    42|
++------+-------------+------+
+
+Report Instance Areas: 
++------+------------------+------------------+------+
+|      |Instance          |Module            |Cells |
++------+------------------+------------------+------+
+|1     |top               |                  |  7024|
+|2     |  u_bc            |button_debounce   |    40|
+|3     |  u_bd            |button_debounce_0 |    40|
+|4     |  u_bl            |button_debounce_1 |    40|
+|5     |  u_br            |button_debounce_2 |    40|
+|6     |  u_bu            |button_debounce_3 |    40|
+|7     |  u_core          |game_core         |  6272|
+|8     |    u_logic       |game_logic        |  3317|
+|9     |      u_engine    |game_engine       |  2204|
+|10    |        u_collide |ge_collide        |   288|
+|11    |      u_loader    |game_loader       |   826|
+|12    |      u_obj_ram   |obj_ram           |   202|
+|13    |      u_rom       |game_rom          |    43|
+|14    |    u_render      |vga_render        |  2322|
+|15    |      u_bcd1      |binary2bcd_5      |    65|
+|16    |      u_bcd2      |binary2bcd_6      |    67|
+|17    |    u_timing      |vga_timing        |   631|
+|18    |  u_kbd           |kbd_state         |    28|
+|19    |  u_ps2           |ps2_rx            |   157|
+|20    |  u_seg           |sevenseg          |   207|
+|21    |    u_bcd1        |binary2bcd        |    65|
+|22    |    u_bcd2        |binary2bcd_4      |    70|
+|23    |  u_select        |game_select       |    10|
++------+------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 975.289 ; gain = 670.137
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 110 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 975.289 ; gain = 324.816
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 975.289 ; gain = 670.137
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 422 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+181 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 975.289 ; gain = 681.664
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1/top_basys3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_basys3_utilization_synth.rpt -pb top_basys3_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 975.289 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 19 02:38:05 2026...

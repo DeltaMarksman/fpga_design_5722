@@ -1,0 +1,145 @@
+; game.coe decoded: file line, ROM address, word, meaning
+5     000  80020004  DIR[0] game 0 -> header at 0x004, format v2
+6     001  8002008F  DIR[1] game 1 -> header at 0x08F, format v2 - but that area is empty (magic 0), so the loader refuses slot 1 (LED 15)
+7     002  8002010D  DIR[2] game 2 -> header at 0x10D, format v2 - but that area is empty (magic 0), so the loader refuses slot 2 (LED 15)
+8     003  80020174  DIR[3] game 3 -> header at 0x174, format v2 - but that area is empty (magic 0), so the loader refuses slot 3 (LED 15)
+9     004  A51D0A08  game 0 HEADER H0  n_rule=8 n_inp=10 n_obj=29 magic=165
+10    005  0075001E  game 0 HEADER H1  obj_base=30 inp_base=117
+11    006  000E007F  game 0 HEADER H2  rule_base=127 pal_base=14
+12    007  02800000  game 0 HEADER H3  xmin=0 xmax=640
+13    008  01E00000  game 0 HEADER H4  ymin=0 ymax=480
+14    009  0001003C  game 0 HEADER H5  win_score=60 init_score=0 lose_at_zero=1 spin_step=0 spin_max=0
+15    00A  80A85810  game 0 HEADER H6  hud_p1_x=16 hud_p2_x=534 hud_y=10 hud_en=1
+16    00B  00010003  game 0 HEADER H7  collider_mask=3 controlled_mask=1
+17    00C  001C0303  game 0 HEADER H8  init_lives=3 mark_color=3 wave_watch=28
+18    00D  00000004  game 0 HEADER H9  wave_reload=4
+19    00E  00000001  game 0 PALETTE[0] = #001
+20    00F  00000F64  game 0 PALETTE[1] = #F64
+21    010  000004CF  game 0 PALETTE[2] = #4CF
+22    011  00000FFF  game 0 PALETTE[3] = #FFF
+23    012  00000A97  game 0 PALETTE[4] = #A97
+24    013  00000986  game 0 PALETTE[5] = #986
+25    014  00000875  game 0 PALETTE[6] = #875
+26    015  00000FDA  game 0 PALETTE[7] = #FDA
+27    016  00000AEF  game 0 PALETTE[8] = #AEF
+28    017  00000000  game 0 PALETTE[9] = #000
+29    018  00000000  game 0 PALETTE[10] = #000
+30    019  00000000  game 0 PALETTE[11] = #000
+31    01A  00000000  game 0 PALETTE[12] = #000
+32    01B  00000000  game 0 PALETTE[13] = #000
+33    01C  00000000  game 0 PALETTE[14] = #000
+34    01D  00000000  game 0 PALETTE[15] = #000
+35    01E  038748C8  game 0 OBJECT 0 word 0 (x, y, w): SHIP P1 at (200,233) 14x14 v=(0,0) colour 1 enabled WRAP SHIELD 60 frames marker facing E
+36    01F  4040000E  game 0 OBJECT 0 word 1 (h, velocity, colour, class, owner): SHIP P1 at (200,233) 14x14 v=(0,0) colour 1 enabled WRAP SHIELD 60 frames marker facing E
+37    020  0013C01D  game 0 OBJECT 0 word 2 (enabled, modes, heading, timers): SHIP P1 at (200,233) 14x14 v=(0,0) colour 1 enabled WRAP SHIELD 60 frames marker facing E
+38    021  038749AA  game 0 OBJECT 1 word 0 (x, y, w): SHIP P2 at (426,233) 14x14 v=(0,0) colour 2 enabled WRAP SHIELD 60 frames marker facing W
+39    022  8080000E  game 0 OBJECT 1 word 1 (h, velocity, colour, class, owner): SHIP P2 at (426,233) 14x14 v=(0,0) colour 2 enabled WRAP SHIELD 60 frames marker facing W
+40    023  0013C09D  game 0 OBJECT 1 word 2 (enabled, modes, heading, timers): SHIP P2 at (426,233) 14x14 v=(0,0) colour 2 enabled WRAP SHIELD 60 frames marker facing W
+41    024  01000000  game 0 OBJECT 2 word 0 (x, y, w): SHOT P1 at (0,0) 4x4 v=(6,0) colour 7 starts disabled (pool) WRAP LIFETIME 45 frames
+42    025  45C01804  game 0 OBJECT 2 word 1 (h, velocity, colour, class, owner): SHOT P1 at (0,0) 4x4 v=(6,0) colour 7 starts disabled (pool) WRAP LIFETIME 45 frames
+43    026  0002D014  game 0 OBJECT 2 word 2 (enabled, modes, heading, timers): SHOT P1 at (0,0) 4x4 v=(6,0) colour 7 starts disabled (pool) WRAP LIFETIME 45 frames
+44    027  01000000  game 0 OBJECT 3 word 0 (x, y, w): SHOT P1 at (0,0) 4x4 v=(6,0) colour 7 starts disabled (pool) WRAP LIFETIME 45 frames
+45    028  45C01804  game 0 OBJECT 3 word 1 (h, velocity, colour, class, owner): SHOT P1 at (0,0) 4x4 v=(6,0) colour 7 starts disabled (pool) WRAP LIFETIME 45 frames
+46    029  0002D014  game 0 OBJECT 3 word 2 (enabled, modes, heading, timers): SHOT P1 at (0,0) 4x4 v=(6,0) colour 7 starts disabled (pool) WRAP LIFETIME 45 frames
+47    02A  01000000  game 0 OBJECT 4 word 0 (x, y, w): SHOT P1 at (0,0) 4x4 v=(6,0) colour 7 starts disabled (pool) WRAP LIFETIME 45 frames
+48    02B  45C01804  game 0 OBJECT 4 word 1 (h, velocity, colour, class, owner): SHOT P1 at (0,0) 4x4 v=(6,0) colour 7 starts disabled (pool) WRAP LIFETIME 45 frames
+49    02C  0002D014  game 0 OBJECT 4 word 2 (enabled, modes, heading, timers): SHOT P1 at (0,0) 4x4 v=(6,0) colour 7 starts disabled (pool) WRAP LIFETIME 45 frames
+50    02D  01000000  game 0 OBJECT 5 word 0 (x, y, w): SHOT P2 at (0,0) 4x4 v=(6,0) colour 8 starts disabled (pool) WRAP LIFETIME 45 frames
+51    02E  86001804  game 0 OBJECT 5 word 1 (h, velocity, colour, class, owner): SHOT P2 at (0,0) 4x4 v=(6,0) colour 8 starts disabled (pool) WRAP LIFETIME 45 frames
+52    02F  0002D014  game 0 OBJECT 5 word 2 (enabled, modes, heading, timers): SHOT P2 at (0,0) 4x4 v=(6,0) colour 8 starts disabled (pool) WRAP LIFETIME 45 frames
+53    030  01000000  game 0 OBJECT 6 word 0 (x, y, w): SHOT P2 at (0,0) 4x4 v=(6,0) colour 8 starts disabled (pool) WRAP LIFETIME 45 frames
+54    031  86001804  game 0 OBJECT 6 word 1 (h, velocity, colour, class, owner): SHOT P2 at (0,0) 4x4 v=(6,0) colour 8 starts disabled (pool) WRAP LIFETIME 45 frames
+55    032  0002D014  game 0 OBJECT 6 word 2 (enabled, modes, heading, timers): SHOT P2 at (0,0) 4x4 v=(6,0) colour 8 starts disabled (pool) WRAP LIFETIME 45 frames
+56    033  01000000  game 0 OBJECT 7 word 0 (x, y, w): SHOT P2 at (0,0) 4x4 v=(6,0) colour 8 starts disabled (pool) WRAP LIFETIME 45 frames
+57    034  86001804  game 0 OBJECT 7 word 1 (h, velocity, colour, class, owner): SHOT P2 at (0,0) 4x4 v=(6,0) colour 8 starts disabled (pool) WRAP LIFETIME 45 frames
+58    035  0002D014  game 0 OBJECT 7 word 2 (enabled, modes, heading, timers): SHOT P2 at (0,0) 4x4 v=(6,0) colour 8 starts disabled (pool) WRAP LIFETIME 45 frames
+59    036  08014028  game 0 OBJECT 8 word 0 (x, y, w): ROCK_L none at (40,40) 32x32 v=(2,1) colour 4 enabled WRAP
+60    037  09010820  game 0 OBJECT 8 word 1 (h, velocity, colour, class, owner): ROCK_L none at (40,40) 32x32 v=(2,1) colour 4 enabled WRAP
+61    038  00000005  game 0 OBJECT 8 word 2 (enabled, modes, heading, timers): ROCK_L none at (40,40) 32x32 v=(2,1) colour 4 enabled WRAP
+62    039  0801E230  game 0 OBJECT 9 word 0 (x, y, w): ROCK_L none at (560,60) 32x32 v=(-1,2) colour 4 enabled WRAP
+63    03A  0902FC20  game 0 OBJECT 9 word 1 (h, velocity, colour, class, owner): ROCK_L none at (560,60) 32x32 v=(-1,2) colour 4 enabled WRAP
+64    03B  00000005  game 0 OBJECT 9 word 2 (enabled, modes, heading, timers): ROCK_L none at (560,60) 32x32 v=(-1,2) colour 4 enabled WRAP
+65    03C  080C812C  game 0 OBJECT 10 word 0 (x, y, w): ROCK_L none at (300,400) 32x32 v=(1,-2) colour 4 enabled WRAP
+66    03D  093E0420  game 0 OBJECT 10 word 1 (h, velocity, colour, class, owner): ROCK_L none at (300,400) 32x32 v=(1,-2) colour 4 enabled WRAP
+67    03E  00000005  game 0 OBJECT 10 word 2 (enabled, modes, heading, timers): ROCK_L none at (300,400) 32x32 v=(1,-2) colour 4 enabled WRAP
+68    03F  04000000  game 0 OBJECT 11 word 0 (x, y, w): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+69    040  0D400410  game 0 OBJECT 11 word 1 (h, velocity, colour, class, owner): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+70    041  00000004  game 0 OBJECT 11 word 2 (enabled, modes, heading, timers): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+71    042  04000000  game 0 OBJECT 12 word 0 (x, y, w): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+72    043  0D400410  game 0 OBJECT 12 word 1 (h, velocity, colour, class, owner): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+73    044  00000004  game 0 OBJECT 12 word 2 (enabled, modes, heading, timers): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+74    045  04000000  game 0 OBJECT 13 word 0 (x, y, w): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+75    046  0D400410  game 0 OBJECT 13 word 1 (h, velocity, colour, class, owner): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+76    047  00000004  game 0 OBJECT 13 word 2 (enabled, modes, heading, timers): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+77    048  04000000  game 0 OBJECT 14 word 0 (x, y, w): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+78    049  0D400410  game 0 OBJECT 14 word 1 (h, velocity, colour, class, owner): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+79    04A  00000004  game 0 OBJECT 14 word 2 (enabled, modes, heading, timers): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+80    04B  04000000  game 0 OBJECT 15 word 0 (x, y, w): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+81    04C  0D400410  game 0 OBJECT 15 word 1 (h, velocity, colour, class, owner): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+82    04D  00000004  game 0 OBJECT 15 word 2 (enabled, modes, heading, timers): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+83    04E  04000000  game 0 OBJECT 16 word 0 (x, y, w): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+84    04F  0D400410  game 0 OBJECT 16 word 1 (h, velocity, colour, class, owner): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+85    050  00000004  game 0 OBJECT 16 word 2 (enabled, modes, heading, timers): ROCK_M none at (0,0) 16x16 v=(1,0) colour 5 starts disabled (pool) WRAP
+86    051  02000000  game 0 OBJECT 17 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+87    052  11800408  game 0 OBJECT 17 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+88    053  00000004  game 0 OBJECT 17 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+89    054  02000000  game 0 OBJECT 18 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+90    055  11800408  game 0 OBJECT 18 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+91    056  00000004  game 0 OBJECT 18 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+92    057  02000000  game 0 OBJECT 19 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+93    058  11800408  game 0 OBJECT 19 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+94    059  00000004  game 0 OBJECT 19 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+95    05A  02000000  game 0 OBJECT 20 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+96    05B  11800408  game 0 OBJECT 20 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+97    05C  00000004  game 0 OBJECT 20 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+98    05D  02000000  game 0 OBJECT 21 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+99    05E  11800408  game 0 OBJECT 21 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+100   05F  00000004  game 0 OBJECT 21 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+101   060  02000000  game 0 OBJECT 22 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+102   061  11800408  game 0 OBJECT 22 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+103   062  00000004  game 0 OBJECT 22 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+104   063  02000000  game 0 OBJECT 23 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+105   064  11800408  game 0 OBJECT 23 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+106   065  00000004  game 0 OBJECT 23 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+107   066  02000000  game 0 OBJECT 24 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+108   067  11800408  game 0 OBJECT 24 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+109   068  00000004  game 0 OBJECT 24 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+110   069  02000000  game 0 OBJECT 25 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+111   06A  11800408  game 0 OBJECT 25 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+112   06B  00000004  game 0 OBJECT 25 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+113   06C  02000000  game 0 OBJECT 26 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+114   06D  11800408  game 0 OBJECT 26 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+115   06E  00000004  game 0 OBJECT 26 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+116   06F  02000000  game 0 OBJECT 27 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+117   070  11800408  game 0 OBJECT 27 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+118   071  00000004  game 0 OBJECT 27 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+119   072  02000000  game 0 OBJECT 28 word 0 (x, y, w): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+120   073  11800408  game 0 OBJECT 28 word 1 (h, velocity, colour, class, owner): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+121   074  00000004  game 0 OBJECT 28 word 2 (enabled, modes, heading, timers): ROCK_S none at (0,0) 8x8 v=(1,0) colour 6 starts disabled (pool) WRAP
+122   075  10100037  game 0 INPUT 0: P1_UP (W) HELD -> SHIP owned by P1: MOVE UP at 3 px/frame, turn to face it
+123   076  11100036  game 0 INPUT 1: P1_DOWN (S) HELD -> SHIP owned by P1: MOVE DOWN at 3 px/frame, turn to face it
+124   077  12100035  game 0 INPUT 2: P1_LEFT (A) HELD -> SHIP owned by P1: MOVE LEFT at 3 px/frame, turn to face it
+125   078  13100034  game 0 INPUT 3: P1_RIGHT (D) HELD -> SHIP owned by P1: MOVE RIGHT at 3 px/frame, turn to face it
+126   079  24500801  game 0 INPUT 4: P1_FIRE (F) PRESSED -> SHIP owned by P1: FIRE: activate a free SHOT from the pool, then wait 8 frames
+127   07A  15200037  game 0 INPUT 5: P2_UP (Up) HELD -> SHIP owned by P2: MOVE UP at 3 px/frame, turn to face it
+128   07B  16200036  game 0 INPUT 6: P2_DOWN (Down) HELD -> SHIP owned by P2: MOVE DOWN at 3 px/frame, turn to face it
+129   07C  17200035  game 0 INPUT 7: P2_LEFT (Left) HELD -> SHIP owned by P2: MOVE LEFT at 3 px/frame, turn to face it
+130   07D  18200034  game 0 INPUT 8: P2_RIGHT (Right) HELD -> SHIP owned by P2: MOVE RIGHT at 3 px/frame, turn to face it
+131   07E  29600801  game 0 INPUT 9: P2_FIRE (Enter) PRESSED -> SHIP owned by P2: FIRE: activate a free SHOT from the pool, then wait 8 frames
+132   07F  01200000  game 0 RULE 0 word 0: WHEN SHOT touches ROCK_L (ANY) THEN self's owner score +1, self DESTROY, other SPLIT into two ROCK_M
+133   080  03221100  game 0 RULE 0 word 1: WHEN SHOT touches ROCK_L (ANY) THEN self's owner score +1, self DESTROY, other SPLIT into two ROCK_M
+134   081  01300000  game 0 RULE 1 word 0: WHEN SHOT touches ROCK_M (ANY) THEN self's owner score +2, self DESTROY, other SPLIT into two ROCK_S
+135   082  04222100  game 0 RULE 1 word 1: WHEN SHOT touches ROCK_M (ANY) THEN self's owner score +2, self DESTROY, other SPLIT into two ROCK_S
+136   083  01400000  game 0 RULE 2 word 0: WHEN SHOT touches ROCK_S (ANY) THEN self's owner score +3, self DESTROY, other DESTROY
+137   084  00123100  game 0 RULE 2 word 1: WHEN SHOT touches ROCK_S (ANY) THEN self's owner score +3, self DESTROY, other DESTROY
+138   085  00120000  game 0 RULE 3 word 0: WHEN SHIP touches SHOT (DIFFERENT owner) THEN other's owner score +5, other DESTROY
+139   086  00105200  game 0 RULE 3 word 1: WHEN SHIP touches SHOT (DIFFERENT owner) THEN other's owner score +5, other DESTROY
+140   087  00120000  game 0 RULE 4 word 0: WHEN SHIP touches SHOT (DIFFERENT owner) THEN self's owner lives -1, self RESPAWN
+141   088  0003F120  game 0 RULE 4 word 1: WHEN SHIP touches SHOT (DIFFERENT owner) THEN self's owner lives -1, self RESPAWN
+142   089  00200000  game 0 RULE 5 word 0: WHEN SHIP touches ROCK_L (ANY) THEN self's owner lives -1, self RESPAWN, other SPLIT into two ROCK_M
+143   08A  0323F120  game 0 RULE 5 word 1: WHEN SHIP touches ROCK_L (ANY) THEN self's owner lives -1, self RESPAWN, other SPLIT into two ROCK_M
+144   08B  00300000  game 0 RULE 6 word 0: WHEN SHIP touches ROCK_M (ANY) THEN self's owner lives -1, self RESPAWN, other SPLIT into two ROCK_S
+145   08C  0423F120  game 0 RULE 6 word 1: WHEN SHIP touches ROCK_M (ANY) THEN self's owner lives -1, self RESPAWN, other SPLIT into two ROCK_S
+146   08D  00400000  game 0 RULE 7 word 0: WHEN SHIP touches ROCK_S (ANY) THEN self's owner lives -1, self RESPAWN, other DESTROY
+147   08E  0013F120  game 0 RULE 7 word 1: WHEN SHIP touches ROCK_S (ANY) THEN self's owner lives -1, self RESPAWN, other DESTROY
+149-2048: unused, all 0 (the .coe lists 2043 words; the Block Memory Generator fills the rest with 0)

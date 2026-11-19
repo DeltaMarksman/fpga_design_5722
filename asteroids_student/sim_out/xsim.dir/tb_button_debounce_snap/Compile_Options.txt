@@ -1,0 +1,1 @@
+-nolog -debug "off" -s "tb_button_debounce_snap" "work.tb_button_debounce" 

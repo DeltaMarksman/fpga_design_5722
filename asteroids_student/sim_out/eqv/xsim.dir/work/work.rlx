@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/binary2bcd.v,1795072017,verilog,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/sim_out/eqv/vga_render_orig.v,,binary2bcd,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_defs.vh,1795068684,verilog,,,,,,,,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v,1795073655,verilog,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/binary2bcd.v,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_defs.vh,hud_digits;hud_pips;vga_render,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_timing.v,1795071277,verilog,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/vga_render.v,,vga_timing,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/sim_out/eqv/tb_render_eqv.v,1795073696,verilog,,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_defs.vh,tb_render_eqv,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,
+C:/Users/sudan/Downloads/final_project/kit/asteroids_student/sim_out/eqv/vga_render_orig.v,1795073675,verilog,,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/sim_out/eqv/tb_render_eqv.v,C:/Users/sudan/Downloads/final_project/kit/asteroids_student/HDL_Incomplete/ge_defs.vh,vga_render_orig,,,C:\Users\sudan\Downloads\final_project\kit\asteroids_student\HDL_Incomplete,,,,,

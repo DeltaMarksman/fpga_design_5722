@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Nov 19 02:36:44 2026
+# Process ID: 54496
+# Current directory: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/sim_out/eqv
+# Command line: wbtcv.exe -mode batch -source C:/Users/sudan/Downloads/final_project/kit/asteroids_student/sim_out/eqv/xsim.dir/eqv/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/sim_out/eqv/webtalk.log
+# Journal file: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/sim_out/eqv\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/sudan/Downloads/final_project/kit/asteroids_student/sim_out/eqv/xsim.dir/eqv/webtalk/xsim_webtalk.tcl -notrace

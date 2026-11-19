@@ -1,0 +1,1 @@
+-nolog -debug "off" -s "tb_binary2bcd_snap" "work.tb_binary2bcd" 

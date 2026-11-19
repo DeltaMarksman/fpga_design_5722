@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_ge_split_snap/xsimk.exe -runall -simmode gui -wdb tb_ge_split_snap.wdb -simrunnum 0 -socket 54158
+Design successfully loaded
+Design Loading Memory Usage: 8140 KB (Peak: 8140 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 8700 KB (Peak: 8700 KB)
+Simulation CPU Usage: 15 ms

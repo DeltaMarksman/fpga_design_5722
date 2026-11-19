@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="game_rom_bmg_synth_1" LaunchDir="C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/game_rom_bmg_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="obj_ram_bmg_synth_1" LaunchDir="C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/obj_ram_bmg_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="game_rom_bmg_synth_1"/>
+		<Parent Id="obj_ram_bmg_synth_1"/>
+	</Run>
+</Runs>
+

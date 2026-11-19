@@ -1,0 +1,229 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Nov 19 02:38:53 2026
+| Host         : DESKTOP-8H87QI6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_basys3_control_sets_placed.rpt
+| Design       : top_basys3
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   156 |
+| Unused register locations in slices containing registers |   527 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             150 |           55 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             258 |          108 |
+| Yes          | No                    | No                     |               4 |            1 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1837 |          748 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------+-------------------------+------------------+----------------+
+|  Clock Signal  |                      Enable Signal                      |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++----------------+---------------------------------------------------------+-------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/line_overflow_reg               | rst                     |                1 |              1 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/E[0]                            | rst                     |                1 |              3 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[23][3]_i_1_n_0                 | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[11][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[12][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[15][3]_i_1_n_0                 | rst                     |                4 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[10][3]_i_1_n_0                 | rst                     |                3 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col                                | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[22][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[21][3]_i_1_n_0                 | rst                     |                3 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[30][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[20][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/evt_edges[3]_i_1_n_0            | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[13][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/lives1_reg[0][0]                | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/lives2_reg[3][0]                | rst                     |                3 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/u_bcd1/t0[3]_i_1_n_0                    | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/u_bcd1/t1[3]_i_1_n_0                    | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[26][3]_i_1_n_0                 | rst                     |                3 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/u_bcd2/t1[3]_i_1__0_n_0                 | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[27][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[24][3]_i_1_n_0                 | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[4][3]_i_1_n_0                  | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/u_bcd2/t0[3]_i_1__0_n_0                 | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/a_rec[57]                       | rst                     |                3 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[29][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[2][3]_i_1_n_0                  | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[28][3]_i_1_n_0                 | rst                     |                3 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[8][3]_i_1_n_0                  | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[5][3]_i_1_n_0                  | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[6][3]_i_1_n_0                  | rst                     |                3 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[7][3]_i_1_n_0                  | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[31][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/a_rec[74]                       | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/b_rec[74]                       | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[9][3]_i_1_n_0                  | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[25][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | por_cnt[3]_i_1_n_0                                      |                         |                1 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[18][3]_i_1_n_0                 | rst                     |                3 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[3][3]_i_1_n_0                  | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/FSM_sequential_state[3]_i_1_n_0 | rst                     |                3 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[19][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_seg/u_bcd1/t0[3]_i_1__1_n_0                           | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[17][3]_i_1_n_0                 | rst                     |                2 |              4 |
+|  clk_IBUF_BUFG | u_seg/u_bcd1/t1[3]_i_1__1_n_0                           | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[16][3]_i_1_n_0                 | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_seg/u_bcd2/t0[3]_i_1__2_n_0                           | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_seg/u_bcd2/t1[3]_i_1__2_n_0                           | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[1][3]_i_1_n_0                  | rst                     |                1 |              4 |
+|  clk_IBUF_BUFG | u_ps2/c_fall                                            | u_ps2/nbits[3]_i_1_n_0  |                2 |              4 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_col[14][3]_i_1_n_0                 | rst                     |                3 |              4 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/k[4]_i_1_n_0                    | rst                     |                3 |              5 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/a_rec[85]                       | rst                     |                4 |              5 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/a_rec[47]                       | rst                     |                4 |              6 |
+|  clk_IBUF_BUFG | u_core/u_render/scanning_reg_n_0                        | u_core/u_timing/slot_xe |                2 |              6 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/m                               | rst                     |                4 |              6 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/r                               | rst                     |                2 |              6 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/a_rec[53]                       | rst                     |                5 |              6 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/i[6]_i_1_n_0                    | rst                     |                6 |              7 |
+|  clk_IBUF_BUFG |                                                         | u_ps2/c_cnt[6]_i_1_n_0  |                2 |              7 |
+|  clk_IBUF_BUFG |                                                         | u_ps2/d_cnt[6]_i_1_n_0  |                2 |              7 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/j                               | rst                     |                3 |              7 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/k                               | rst                     |                3 |              7 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/score1_reg[0][0]                | rst                     |                3 |              7 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/score2_reg[0][0]                | rst                     |                2 |              7 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/i                               | rst                     |                2 |              7 |
+|  clk_IBUF_BUFG | u_seg/u_bcd2/bcd0[3]_i_1__0_n_0                         | rst                     |                2 |              8 |
+|  clk_IBUF_BUFG | u_seg/u_bcd1/bcd0[3]_i_1_n_0                            | rst                     |                2 |              8 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/a_rec[81]                       | rst                     |                6 |              8 |
+|  clk_IBUF_BUFG | u_ps2/code[7]_i_1_n_0                                   | rst                     |                2 |              8 |
+|  clk_IBUF_BUFG | u_core/u_render/u_bcd2/bcd1[3]_i_1__0_n_0               | rst                     |                2 |              8 |
+|  clk_IBUF_BUFG | u_core/u_render/u_bcd1/bcd1[3]_i_1_n_0                  | rst                     |                3 |              8 |
+|  clk_IBUF_BUFG | u_seg/u_bcd1/st[0]                                      | rst                     |                2 |             10 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/a_rec[31]                       | rst                     |                4 |             10 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/b_rec[31]                       | rst                     |                4 |             10 |
+|  clk_IBUF_BUFG | u_core/u_render/u_bcd1/st[0]                            | rst                     |                2 |             10 |
+|  clk_IBUF_BUFG | u_core/u_render/u_bcd2/st[0]                            | rst                     |                2 |             10 |
+|  clk_IBUF_BUFG | u_core/u_timing/scan_tick                               | rst                     |                4 |             10 |
+|  clk_IBUF_BUFG | u_core/u_timing/vcount[9]_i_1_n_0                       | rst                     |                4 |             10 |
+|  clk_IBUF_BUFG | u_ps2/c_fall                                            | rst                     |                3 |             10 |
+|  clk_IBUF_BUFG | u_seg/u_bcd2/st[0]                                      | rst                     |                3 |             10 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/hdr                             | rst                     |                4 |             11 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/optr[10]_i_1_n_0                | rst                     |                5 |             11 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/a_rec[65]                       | rst                     |                6 |             11 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/state                           | rst                     |                6 |             11 |
+|  clk_IBUF_BUFG | u_core/u_timing/pix_ce                                  | u_core/u_timing/SR[0]   |                4 |             12 |
+|  clk_IBUF_BUFG | u_core/u_render/sc_cnt                                  | u_core/u_timing/slot_xe |                7 |             13 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/a_rec[41]                       | rst                     |                9 |             14 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/b_rec[63]                       | rst                     |               10 |             14 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/btn_prev_reg[0][0]              | rst                     |                6 |             14 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/r0[31]_i_1_n_0                  | rst                     |                4 |             15 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/wave_reload[15]_i_1_n_0         | rst                     |                3 |             16 |
+|  clk_IBUF_BUFG | u_ps2/ps2_valid                                         | rst                     |                4 |             16 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/pal_we                          |                         |                2 |             16 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/b_rec[60]                       | rst                     |               11 |             18 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/rl_ret                          | rst                     |               10 |             18 |
+|  clk_IBUF_BUFG | u_ps2/idle                                              | u_ps2/idle[0]_i_1_n_0   |                5 |             18 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/n_obj[6]_i_1_n_0                | rst                     |                5 |             19 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[1][9]_i_1_n_0                   | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG |                                                         | u_bl/cnt[0]_i_1__2_n_0  |                5 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[25][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                6 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[26][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                9 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[28][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                6 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[29][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                6 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[2][9]_i_1_n_0                   | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[30][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                5 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[31][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[3][9]_i_1_n_0                   | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[24][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[22][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                8 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[20][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                9 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[19][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[27][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                6 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[21][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[6][9]_i_1_n_0                   | u_core/u_timing/slot_xe |                6 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[7][9]_i_1_n_0                   | u_core/u_timing/slot_xe |                6 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[9][9]_i_1_n_0                   | u_core/u_timing/slot_xe |                6 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[8][9]_i_1_n_0                   | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[4][9]_i_1_n_0                   | u_core/u_timing/slot_xe |               10 |             20 |
+|  clk_IBUF_BUFG |                                                         | u_br/cnt[0]_i_1__0_n_0  |                5 |             20 |
+|  clk_IBUF_BUFG |                                                         | u_bu/cnt[0]_i_1_n_0     |                5 |             20 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/btn_now                         | rst                     |                5 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[23][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                6 |             20 |
+|  clk_IBUF_BUFG |                                                         | u_bc/cnt[0]_i_1__3_n_0  |                5 |             20 |
+|  clk_IBUF_BUFG |                                                         | u_bd/cnt[0]_i_1__1_n_0  |                5 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[11][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[12][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                5 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[13][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                6 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[14][9]_i_2_n_0                  | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[0][9]_i_1_n_0                   | u_core/u_timing/slot_xe |                8 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[10][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[15][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                7 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[17][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                6 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[18][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                8 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[16][9]_i_1_n_0                  | u_core/u_timing/slot_xe |                8 |             20 |
+|  clk_IBUF_BUFG | u_core/u_render/slot_xe[5][9]_i_1_n_0                   | u_core/u_timing/slot_xe |                6 |             20 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/b_rec[21]                       | rst                     |               17 |             22 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/obj_base[10]_i_1_n_0            | rst                     |                7 |             22 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/pal_base                        | rst                     |                6 |             22 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/a_rec[21]                       | rst                     |               18 |             22 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/ymin[10]_i_1_n_0                | rst                     |                7 |             22 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/xmin[10]_i_1_n_0                | rst                     |                8 |             22 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/win_score[6]_i_1_n_0            | rst                     |               12 |             23 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/init_lives[3]_i_1_n_0           | rst                     |                7 |             24 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/b_rec[95]                       | rst                     |               11 |             24 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/r1[27]_i_1_n_0                  | rst                     |               10 |             25 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/m_rec[31]_i_1_n_0               | rst                     |                8 |             29 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/hud_p1_x[9]_i_1_n_0             | rst                     |               12 |             30 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/rec[63]_i_1_n_0                 | rst                     |               17 |             32 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/rec[31]_i_1_n_0                 | rst                     |               19 |             32 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/rec[95]_i_1_n_0                 | rst                     |               19 |             32 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_loader/collider_mask[15]_i_1_n_0       | rst                     |                7 |             32 |
+|  clk_IBUF_BUFG | u_core/u_timing/pix_ce                                  | rst                     |               30 |             55 |
+|  clk_IBUF_BUFG | u_core/u_logic/u_engine/spl_cls                         | rst                     |               24 |             60 |
+|  clk_IBUF_BUFG |                                                         | rst                     |               79 |            144 |
+|  clk_IBUF_BUFG |                                                         |                         |               55 |            150 |
++----------------+---------------------------------------------------------+-------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 3      |                     1 |
+| 4      |                    49 |
+| 5      |                     2 |
+| 6      |                     5 |
+| 7      |                     8 |
+| 8      |                     6 |
+| 10     |                     9 |
+| 11     |                     4 |
+| 12     |                     1 |
+| 13     |                     1 |
+| 14     |                     3 |
+| 15     |                     1 |
+| 16+    |                    65 |
++--------+-----------------------+
+
+

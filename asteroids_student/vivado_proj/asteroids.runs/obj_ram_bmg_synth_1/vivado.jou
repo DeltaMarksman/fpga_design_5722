@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Nov 19 02:21:04 2026
+# Process ID: 51804
+# Current directory: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/obj_ram_bmg_synth_1
+# Command line: vivado.exe -log obj_ram_bmg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source obj_ram_bmg.tcl
+# Log file: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/obj_ram_bmg_synth_1/obj_ram_bmg.vds
+# Journal file: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/obj_ram_bmg_synth_1\vivado.jou
+#-----------------------------------------------------------
+source obj_ram_bmg.tcl -notrace

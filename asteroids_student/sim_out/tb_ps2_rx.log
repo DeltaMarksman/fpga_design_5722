@@ -1,0 +1,26 @@
+﻿
+****** xsim v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_ps2_rx_snap/xsim_script.tcl
+# xsim {tb_ps2_rx_snap} -autoloadwcfg -runall
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+received 1d
+received f0
+received e0
+received 75
+received 5a
+received aa
+received 00
+received ff
+bad parity frame rejected
+time-out frame_err seen
+received 2b
+tb_ps2_rx: PASS
+$finish called at time : 13350095 ns : File "C:/Users/sudan/Downloads/final_project/kit/asteroids_student/tb/tb_ps2_rx.v" Line 101
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Nov 19 02:20:30 2026...

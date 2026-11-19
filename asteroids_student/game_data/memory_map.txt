@@ -1,0 +1,53 @@
+BRAM game engine - memory map and budgets
+=========================================
+
+ROM: 2048 words x 32 bits = 65536 bits (143 of 2048 words used, 7.0 %)
+Capacity per game: 64 objects, 32 input mappings, 32 rules, 16 classes, 16 colours
+
+addr range     words  contents
+0x000-0x003       4  game directory
+0x004-0x00D      10  game 0 asteroids header
+0x00E-0x01D      16  game 0 asteroids palette
+0x01E-0x074      87  game 0 asteroids objects (29 x 3)
+0x075-0x07E      10  game 0 asteroids input mappings (10)
+0x07F-0x08E      16  game 0 asteroids rules (8 x 2)
+0x08F-0x7FF    1905  unused, reads as 0
+
+Per-game usage
+--------------
+slot name       objects  inputs  rules  classes  colours  ROM words
+   0 asteroids    29/64   10/32   8/32    5/16     9/16     139
+
+Worst-case update cost (system clocks, provable upper bound)
+------------------------------------------------------------
+budget: 140800 clocks = vertical-blanking lines 480..523 at 3200 clocks/line
+slot name       prep  input  move+collide   wave   total  of budget  colliders
+   0 asteroids   117   1117         11625    321   13182     9.36 %          8
+
+Scanline occupancy (renderer has 32 line slots; a facing marker uses one more)
+-----------------------------------------------
+slot name       fixed-row(max)  roaming  bound  worst line
+   0 asteroids               0       31     31           0
+
+Game 0: Asteroids Versus (asteroids.json)
+  classes : 0=SHIP*, 1=SHOT, 2=ROCK_L, 3=ROCK_M, 4=ROCK_S   (* = controlled)
+  palette : 0=bg #001, 1=p1 #F64, 2=p2 #4CF, 3=white #FFF, 4=rock_l #A97, 5=rock_m #986, 6=rock_s #875, 7=shot1 #FDA, 8=shot2 #AEF
+  collider_mask=0x0003 controlled_mask=0x0001
+  input  0 @0x075 10100037  P1_UP HELD -> class SHIP owner P1: MOVE UP speed 3 set_facing
+  input  1 @0x076 11100036  P1_DOWN HELD -> class SHIP owner P1: MOVE DOWN speed 3 set_facing
+  input  2 @0x077 12100035  P1_LEFT HELD -> class SHIP owner P1: MOVE LEFT speed 3 set_facing
+  input  3 @0x078 13100034  P1_RIGHT HELD -> class SHIP owner P1: MOVE RIGHT speed 3 set_facing
+  input  4 @0x079 24500801  P1_ACT PRESSED -> class SHIP owner P1: SPAWN SHOT cooldown 8
+  input  5 @0x07A 15200037  P2_UP HELD -> class SHIP owner P2: MOVE UP speed 3 set_facing
+  input  6 @0x07B 16200036  P2_DOWN HELD -> class SHIP owner P2: MOVE DOWN speed 3 set_facing
+  input  7 @0x07C 17200035  P2_LEFT HELD -> class SHIP owner P2: MOVE LEFT speed 3 set_facing
+  input  8 @0x07D 18200034  P2_RIGHT HELD -> class SHIP owner P2: MOVE RIGHT speed 3 set_facing
+  input  9 @0x07E 29600801  P2_ACT PRESSED -> class SHIP owner P2: SPAWN SHOT cooldown 8
+  rule   0 @0x07F 01200000 03221100  COLLIDE self=SHOT other=ROCK_L owner_rel=ANY => score[SELF_OWNER]+1 self:DESTROY other:SPLIT(ROCK_M)
+  rule   1 @0x081 01300000 04222100  COLLIDE self=SHOT other=ROCK_M owner_rel=ANY => score[SELF_OWNER]+2 self:DESTROY other:SPLIT(ROCK_S)
+  rule   2 @0x083 01400000 00123100  COLLIDE self=SHOT other=ROCK_S owner_rel=ANY => score[SELF_OWNER]+3 self:DESTROY other:DESTROY
+  rule   3 @0x085 00120000 00105200  COLLIDE self=SHIP other=SHOT owner_rel=DIFFERENT => score[OTHER_OWNER]+5 other:DESTROY
+  rule   4 @0x087 00120000 0003F120  COLLIDE self=SHIP other=SHOT owner_rel=DIFFERENT => lives[SELF_OWNER]-1 self:RESPAWN
+  rule   5 @0x089 00200000 0323F120  COLLIDE self=SHIP other=ROCK_L owner_rel=ANY => lives[SELF_OWNER]-1 self:RESPAWN other:SPLIT(ROCK_M)
+  rule   6 @0x08B 00300000 0423F120  COLLIDE self=SHIP other=ROCK_M owner_rel=ANY => lives[SELF_OWNER]-1 self:RESPAWN other:SPLIT(ROCK_S)
+  rule   7 @0x08D 00400000 0013F120  COLLIDE self=SHIP other=ROCK_S owner_rel=ANY => lives[SELF_OWNER]-1 self:RESPAWN other:DESTROY

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Nov 19 02:38:15 2026
+# Process ID: 29704
+# Current directory: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/impl_1
+# Command line: vivado.exe -log top_basys3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_basys3.tcl -notrace
+# Log file: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/impl_1/top_basys3.vdi
+# Journal file: C:/Users/sudan/Downloads/final_project/kit/asteroids_student/vivado_proj/asteroids.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_basys3.tcl -notrace
